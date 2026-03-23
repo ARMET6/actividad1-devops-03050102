@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad 1 - DevOps | Adrián Razo</title>
+    <style>
+        /* Estilos Globales */
+        :root {
+            --primary-color: #ff9900; /* Naranja AWS - CAMBIO VISIBLE */
+            --bg-color: #0f172a; /* Azul muy oscuro profundo */
+            --card-bg: #1e293b; /* Fondo de tarjeta slate */
+            --text-color: #f8fafc; /* Texto casi blanco */
+            --accent-color: #38bdf8; /* Celeste brillante para estados */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            max-width: 550px;
+            width: 90%;
+            text-align: center;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.4rem;
+            margin-bottom: 0.2rem;
+            margin-top: 0;
+            letter-spacing: -1px;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-top: 0;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid var(--primary-color);
+            width: 50px;
+            margin: 1.5rem auto;
+        }
+
+        .info-group {
+            text-align: left;
+            margin-bottom: 1.5rem;
+            background: rgba(0,0,0,0.2);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: var(--accent-color);
+            display: inline-block;
+            width: 100px;
+        }
+
+        /* Badge de Versión - NUEVO ELEMENTO */
+        .version-tag {
+            background: var(--primary-color);
+            color: #000;
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        .terminal-mimic {
+            background-color: #000;
+            color: #4ade80; /* Verde neón */
+            font-family: 'Fira Code', 'Courier New', monospace;
+            padding: 1.2rem;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 0.85rem;
+            margin-top: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .status-badge {
+            background-color: var(--primary-color);
+            color: #000;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            display: inline-block;
+            margin-top: 1.5rem;
+            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Adrián Razo <span class="version-tag">v2.0</span></h1>
+        <h2>DevOps Engineer in Training</h2>
+        
+        <hr>
+
+        <div class="info-group">
+            <p><span class="info-label">Matrícula:</span> 03050102</p>
+            <p><span class="info-label">Materia:</span> Cloud Computing & DevOps</p>
+            <p><span class="info-label">Fecha:</span> 22 de marzo, 2026</p>
+        </div>
+
+        <div class="terminal-mimic">
+            <span style="color: #f8fafc;">$</span> git commit -m "Cambio de interfaz visual"<br>
+            <span style="color: #f8fafc;">$</span> ./deploy.bat<br>
+            <span style="color: #fbbf24;">> Sincronizando con S3... OK</span><br>
+            <span style="color: #f8fafc;">$</span> echo "Despliegue de Adrian completado"
+        </div>
+
+        <div class="status-badge">SITIO ACTUALIZADO</div>
+    </div>
 </body>
 </html>
