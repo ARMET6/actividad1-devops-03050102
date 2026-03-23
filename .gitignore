@@ -1,0 +1,11 @@
+# Archivos específicos de este proyecto
+22 de marzo de 2026.txt
+policy.json
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs y temporales
+*.log
+npm-debug.log*
